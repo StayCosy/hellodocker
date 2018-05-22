@@ -2,7 +2,7 @@ FROM         f58121d72a23
 MAINTAINER    cosy
 
 #把war添加到容器的tomcat目录中
-ADD /cosy/cosy.war /usr/local/tomcat/apache-tomcat-8.5.29/webapps/
+ADD ./target/cosy.war /usr/local/tomcat/apache-tomcat-8.5.29/webapps/
 
 #容器运行时监听的端口
 EXPOSE  8080
